@@ -90,6 +90,22 @@ class NavDrawer extends StatelessWidget {
                 }
               },
             ),
+
+            ListTile(
+              leading: const Icon(Icons.school_outlined, color: moodleWhite),
+              title: const Text(
+                'My profile',
+                style: TextStyle(color: moodleWhite, fontSize: 16),
+              ),
+              selected: isProfile,
+              selectedTileColor: Colors.white24,
+              onTap: () {
+                Navigator.pop(context);
+                if (!isProfile) {
+                  Navigator.pushReplacementNamed(context, '/profile');
+                }
+              },
+            ),
           ],
         ),
       ),
