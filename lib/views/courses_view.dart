@@ -124,8 +124,26 @@ class CoursesView extends StatelessWidget {
                     ],
                     onSelected: (String? value) {},
                   ),
+                ],
+              ),
+              SizedBox(height: 12),
 
-                ]
+              Card(
+                child: InkWell(
+                  onTap: () {},
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 90,
+                        color: const Color.fromARGB(255, 60, 81, 201),
+                      ),
+                      Text('M30235-2025/26-SMYEAR', style: TextStyle(color: moodleSecondary)),
+                      Text('School of Computing', style: TextStyle(fontWeight: FontWeight.bold, color: moodleSecondary)),
+                      Text('Programming Applications and Programming Languages (2025/26)', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 0, 17, 255))),
+                    ],
+                  ),
+                ),
               )
 
             ],
