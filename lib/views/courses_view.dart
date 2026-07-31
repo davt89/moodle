@@ -103,6 +103,8 @@ class CoursesView extends StatelessWidget {
               Row(
                 children: [
                   DropdownMenu<String>(
+                    width: 210,
+                    textStyle: TextStyle(fontSize: 14),
                     initialSelection: 'Sort by course name',
                     dropdownMenuEntries: [
                       DropdownMenuEntry(value: 'Sort by course name', label: 'Sort by course name'),
@@ -112,6 +114,8 @@ class CoursesView extends StatelessWidget {
                     onSelected: (String? value) {},
                   ),
                   DropdownMenu<String>(
+                    width: 130,
+                    textStyle: TextStyle(fontSize: 12),
                     initialSelection: 'Card',
                     dropdownMenuEntries: [
                       DropdownMenuEntry(value: 'Card', label: 'Card'),
