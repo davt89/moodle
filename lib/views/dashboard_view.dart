@@ -108,6 +108,10 @@ class DashboardView extends StatelessWidget {
                             )
                           ),
                           TextButton(
+                            style: TextButton.styleFrom(
+                              backgroundColor: moodlePurple,
+                              foregroundColor: moodleWhite,
+                            ),
                             onPressed: () {},
                             child: Text('Search'),
                           )
