@@ -143,6 +143,21 @@ class AssessmentsView extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: Text('Update page'),
+              ),
+              SizedBox(height: 24),
+
+              const Center(
+                child: Column(
+                  children: [
+                    Icon(Icons.assignment_outlined, size: 48, color: moodleTextDark),
+                    Text(
+                      'No upcoming assessments at the moment',
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: moodlePurple),
+                    ),
+                    SizedBox(height: 8),
+                    Text('There are currently no upcoming assessments available to you. They will start to appear here soon. You can check the assessments tab of each module to see what assessments are planned.',),
+                  ],
+                ),
               )
 
 
