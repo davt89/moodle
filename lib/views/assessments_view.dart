@@ -97,10 +97,25 @@ class AssessmentsView extends StatelessWidget {
                     ],
                     onSelected: (String? value) {},
                   ),
-
-                  
                 ],
-              )
+              ),
+              SizedBox(height: 14),
+
+              Row(
+                children: [
+                  Text('Module', style: TextStyle(fontSize: 16)),
+                  SizedBox(width: 8),
+
+                  DropdownMenu<String>(
+                    initialSelection: 'All modules',
+                    dropdownMenuEntries: const [
+                      DropdownMenuEntry(value: 'All modules', label: 'All modules'),
+                      DropdownMenuEntry(value: 'Programming Applications and Programming Languages (2025/26) (M30235-2025/26-SMYEAR)', label: 'Programming Applications and Programming Languages (2025/26) (M30235-2025/26-SMYEAR)'),
+                      DropdownMenuEntry(value: 'Web Programming (2025/26) (M30237-2025/26-SMJAN)', label: 'Web Programming (2025/26) (M30237-2025/26-SMJAN)'),
+                    ],
+                    onSelected: (String? value) {},
+                  ),
+                ],)
 
 
             ],
