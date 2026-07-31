@@ -92,6 +92,13 @@ class CoursesView extends StatelessWidget {
                   onSelected: (String? value) {},
               ),
 
+              TextFormField(
+                decoration: InputDecoration(
+                  hintText: 'Search',
+                  hintStyle: TextStyle(fontSize: 14),
+                ),
+              )
+
             ],
           ),
         ),
