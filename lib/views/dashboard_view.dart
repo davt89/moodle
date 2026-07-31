@@ -163,9 +163,10 @@ class DashboardView extends StatelessWidget {
                               onSelected: (String? value) {},
                             ),
                           ),
-                          
                         ],
                       ),
+                      SizedBox(height: 12),
+                      
                       Text(
                         'Timeline',
                         style: TextStyle(

@@ -62,12 +62,12 @@ class CoursesView extends StatelessWidget {
       drawer: const NavDrawer(),
       body: Container(
         color: moodleBg,
-        child: const SingleChildScrollView(
+        child: SingleChildScrollView(
           padding: EdgeInsets.all(24.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'My courses',
                 style: TextStyle(
                   fontSize: 28,
@@ -76,10 +76,22 @@ class CoursesView extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 24),
-              Text(
-                'This is the courses overview page.',
-                style: TextStyle(fontSize: 16, color: moodleTextDark),
+
+              const Text(
+                'Course overview',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: moodlePurple),
               ),
+
+              DropdownMenu<String>(
+                initialSelection: 'In progress',
+                  dropdownMenuEntries: [
+                    DropdownMenuEntry(value: 'In progress', label: 'In progress'),
+                    DropdownMenuEntry(value: 'Future', label: 'Future'),
+                    DropdownMenuEntry(value: 'Past', label: 'Past'),
+                  ],
+                  onSelected: (String? value) {},
+              ),
+
             ],
           ),
         ),
