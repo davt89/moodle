@@ -26,10 +26,6 @@ class CoursePageView extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-              const Text(
-                'Profile',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-              ),
             ],
           ),
         ),
@@ -60,6 +56,30 @@ class CoursePageView extends StatelessWidget {
         ],
       ),
       drawer: const NavDrawer(),
+      body: Container(
+        color: moodleBg,
+        child: const SingleChildScrollView(
+          padding: EdgeInsets.all(24.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Programming Applications and Programming Languages (2025/26)',
+                style: TextStyle(
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  color: moodlePurple,
+                ),
+              ),
+            ]
+          )
+        )
+      )
+
+
+
+
+
     );
   }
 }
