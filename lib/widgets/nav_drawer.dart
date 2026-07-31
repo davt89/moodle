@@ -92,7 +92,7 @@ class NavDrawer extends StatelessWidget {
             ),
 
             ListTile(
-              leading: const Icon(Icons.school_outlined, color: moodleWhite),
+              leading: const Icon(Icons.person, color: moodleWhite),
               title: const Text(
                 'My profile',
                 style: TextStyle(color: moodleWhite, fontSize: 16),
