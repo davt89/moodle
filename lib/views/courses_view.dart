@@ -130,7 +130,7 @@ class CoursesView extends StatelessWidget {
 
               Card(
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () { Navigator.pushReplacementNamed(context, '/coursePage'); },
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
