@@ -52,7 +52,7 @@ class DashboardView extends StatelessWidget {
             backgroundColor: moodleGrayBg,
             foregroundColor: moodlePurple,
             child: Text(
-              'YH',
+              'DT',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
             ),
           ),
@@ -143,7 +143,7 @@ class DashboardView extends StatelessWidget {
                         decoration: InputDecoration(
                           hintText: 'Search by activity type or name',
                           hintStyle: TextStyle(fontSize: 14),
-                        ),
+                          ),
                       )
                     ],
                   ),

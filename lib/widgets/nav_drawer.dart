@@ -9,6 +9,7 @@ class NavDrawer extends StatelessWidget {
     final currentRoute = ModalRoute.of(context)?.settings.name ?? '/';
     final bool isDashboard = currentRoute == '/';
     final bool isCourses = currentRoute == '/courses';
+    final bool isProfile = currentRoute == '/profile';
 
     return Drawer(
       backgroundColor: moodlePurple,
