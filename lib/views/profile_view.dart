@@ -68,7 +68,7 @@ class ProfileView extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'Profile',
                 style: TextStyle(
                   fontSize: 28,
@@ -98,7 +98,7 @@ class ProfileView extends StatelessWidget {
               ),
               SizedBox(height: 24),
 
-              Text(
+              const Text(
                 'User details',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: moodlePurple),
               ),
@@ -112,6 +112,19 @@ class ProfileView extends StatelessWidget {
                 onPressed: () {},
                 child: Text('Edit profile'),
               ),
+              SizedBox(height: 22),
+
+              const Text(
+                'Email address',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: moodleTextDark),
+              ),
+
+              const Text(
+                'David.Tran1@myport.ac.uk (Hidden from everyone except users with appropriate permissions)',
+              ),
+              SizedBox(height: 12),
+
+
 
             ],
           ),
