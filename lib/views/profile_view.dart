@@ -131,6 +131,32 @@ class ProfileView extends StatelessWidget {
               const Text(
                 'Europe/London',
               ),
+              SizedBox(height: 22),
+
+              const Text(
+                'Privacy and policies',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: moodlePurple),
+              ),
+              const Text(
+                'Policies and agreements',
+                style: TextStyle(fontSize: 16, color: Color.fromARGB(255, 0, 17, 255)),
+              ),
+              SizedBox(height: 20),
+
+              const Text(
+                'Course details',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: moodlePurple),
+              ),
+              SizedBox(height: 8),
+              const Text(
+                'Course profiles',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: moodleTextDark),
+              ),
+              const Text(
+                '''Project / M34703 Study Project (2026/27)
+M30235-2025/26-SMYEAR Programming Applications and Programming Languages (2025/26)''',
+                style: TextStyle(fontSize: 16, color: Color.fromARGB(255, 0, 17, 255)),
+              ),
 
 
             ],
