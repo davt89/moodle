@@ -144,7 +144,7 @@ class CoursesView extends StatelessWidget {
                     ],
                   ),
                 ),
-              )
+              ),
 
             ],
           ),
