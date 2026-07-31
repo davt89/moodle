@@ -99,7 +99,7 @@ class AssessmentsView extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 14),
+              SizedBox(height: 10),
 
               Row(
                 children: [
@@ -117,7 +117,7 @@ class AssessmentsView extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 14),
+              SizedBox(height: 10),
 
               Row(
                 children: [
@@ -134,6 +134,16 @@ class AssessmentsView extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(height: 10),
+
+              TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: moodlePurple,
+                  foregroundColor: moodleWhite,
+                ),
+                onPressed: () {},
+                child: Text('Update page'),
+              )
 
 
 
