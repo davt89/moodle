@@ -97,6 +97,31 @@ class CoursesView extends StatelessWidget {
                   hintText: 'Search',
                   hintStyle: TextStyle(fontSize: 14),
                 ),
+              ),
+              SizedBox(height: 12),
+
+              Row(
+                children: [
+                  DropdownMenu<String>(
+                    initialSelection: 'Sort by course name',
+                    dropdownMenuEntries: [
+                      DropdownMenuEntry(value: 'Sort by course name', label: 'Sort by course name'),
+                      DropdownMenuEntry(value: 'Sort by short name', label: 'Sort by short name'),
+                      DropdownMenuEntry(value: 'Sort by last accessed', label: 'Sort by last accessed'),
+                    ],
+                    onSelected: (String? value) {},
+                  ),
+                  DropdownMenu<String>(
+                    initialSelection: 'Card',
+                    dropdownMenuEntries: [
+                      DropdownMenuEntry(value: 'Card', label: 'Card'),
+                      DropdownMenuEntry(value: 'List', label: 'List'),
+                      DropdownMenuEntry(value: 'Summary', label: 'Summary'),
+                    ],
+                    onSelected: (String? value) {},
+                  ),
+
+                ]
               )
 
             ],
