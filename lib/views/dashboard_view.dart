@@ -79,7 +79,7 @@ class DashboardView extends StatelessWidget {
               Card(
                 color: moodleWhite,
                 elevation: 0,
-                shape: RoundedRectangleBorder(
+                shape: const RoundedRectangleBorder(
                   side: BorderSide(color: moodleBorder),
                   borderRadius: BorderRadius.all(Radius.circular(8)),
                 ),
@@ -134,6 +134,38 @@ class DashboardView extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      Row(
+                        children: [
+                          Expanded(
+                            child: DropdownMenu<String>(
+                              initialSelection: 'All',
+                              textStyle: TextStyle(fontSize: 11),
+                              dropdownMenuEntries: const [
+                                DropdownMenuEntry(value: 'All', label: 'All'),
+                                DropdownMenuEntry(value: 'Overdue', label: 'Overdue'),
+                                DropdownMenuEntry(value: 'Next 7 Days', label: 'Next 7 Days'),
+                                DropdownMenuEntry(value: 'Next 30 Days', label: 'Next 30 Days'),
+                                DropdownMenuEntry(value: 'Next 3 Months', label: 'Next 3 Months'),
+                                DropdownMenuEntry(value: 'Next 6 Months', label: 'Next 6 Months'),
+                              ],
+                              onSelected: (String? value) {},
+                            ),
+                          ),
+                          
+                          Expanded(
+                            child: DropdownMenu<String>(
+                              initialSelection: 'Sort by dates',
+                              textStyle: TextStyle(fontSize: 11),
+                              dropdownMenuEntries: const [
+                                DropdownMenuEntry(value: 'Sort by dates', label: 'Sort by dates'),
+                                DropdownMenuEntry(value: 'Sort by courses', label: 'Sort by courses'),
+                              ],
+                              onSelected: (String? value) {},
+                            ),
+                          ),
+                          
+                        ],
+                      ),
                       Text(
                         'Timeline',
                         style: TextStyle(
