@@ -67,7 +67,7 @@ class DashboardView extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(
+              const Text(
                 'Dashboard',
                 style: TextStyle(
                   fontSize: 28,
@@ -88,7 +88,7 @@ class DashboardView extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'Search',
                         style: TextStyle(
                           fontSize: 18,
@@ -131,7 +131,7 @@ class DashboardView extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Feature Placeholder 2',
+                        'Timeline',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -139,10 +139,12 @@ class DashboardView extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 12),
-                      Text(
-                        'This is a placeholder block.',
-                        style: TextStyle(fontSize: 14, color: moodleTextMuted),
-                      ),
+                      TextFormField(
+                        decoration: InputDecoration(
+                          hintText: 'Search by activity type or name',
+                          hintStyle: TextStyle(fontSize: 14),
+                        ),
+                      )
                     ],
                   ),
                 ),
