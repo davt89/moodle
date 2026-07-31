@@ -62,7 +62,7 @@ class DashboardView extends StatelessWidget {
       drawer: const NavDrawer(),
       body: Container(
         color: moodleBg,
-        child: const SingleChildScrollView(
+        child:  SingleChildScrollView(
           padding: EdgeInsets.all(24.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -89,7 +89,7 @@ class DashboardView extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Feature Placeholder 1',
+                        'Search',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -97,10 +97,17 @@ class DashboardView extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 12),
-                      Text(
-                        'This is a placeholder block.',
-                        style: TextStyle(fontSize: 14, color: moodleTextMuted),
-                      ),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: TextFormField(
+                              decoration: InputDecoration(
+                                hintText: 'search all courses and modules',
+                              )
+                            )
+                          )
+                        ]
+                      )
                     ],
                   ),
                 ),
