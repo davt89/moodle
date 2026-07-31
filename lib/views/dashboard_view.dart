@@ -103,8 +103,12 @@ class DashboardView extends StatelessWidget {
                             child: TextFormField(
                               decoration: InputDecoration(
                                 hintText: 'search all courses and modules',
-                              )
+                              ),
                             )
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text('Search'),
                           )
                         ]
                       )
