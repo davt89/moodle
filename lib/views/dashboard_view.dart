@@ -103,6 +103,7 @@ class DashboardView extends StatelessWidget {
                             child: TextFormField(
                               decoration: InputDecoration(
                                 hintText: 'search all courses and modules',
+                                hintStyle: TextStyle(fontSize: 14),
                               ),
                             )
                           ),
