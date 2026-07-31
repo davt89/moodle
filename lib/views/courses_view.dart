@@ -52,7 +52,7 @@ class CoursesView extends StatelessWidget {
             backgroundColor: moodleGrayBg,
             foregroundColor: moodlePurple,
             child: Text(
-              'YH',
+              'DT',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
             ),
           ),

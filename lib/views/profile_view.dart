@@ -52,7 +52,7 @@ class ProfileView extends StatelessWidget {
             backgroundColor: moodleGrayBg,
             foregroundColor: moodlePurple,
             child: Text(
-              'YH',
+              'DT',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
             ),
           ),
@@ -60,6 +60,7 @@ class ProfileView extends StatelessWidget {
         ],
       ),
       drawer: const NavDrawer(),
+      
       body: Container(
         color: moodleBg,
         child: const SingleChildScrollView(
@@ -75,11 +76,28 @@ class ProfileView extends StatelessWidget {
                   color: moodlePurple,
                 ),
               ),
-              SizedBox(height: 24),
-              Text(
-                'This is the profile page.',
-                style: TextStyle(fontSize: 16, color: moodleTextDark),
-              ),
+              SizedBox(height: 50),
+
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 60,
+                    backgroundColor: moodleGrayBg,
+                    foregroundColor: moodlePurple,
+                    child: Text(
+                      'DT',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                    ),
+                  ),
+                  SizedBox(width: 24),
+                  Text(
+                    'David Tran',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: moodleTextDark),
+                  ),
+                ]
+              )
+
+              
             ],
           ),
         ),
