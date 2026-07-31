@@ -62,13 +62,13 @@ class AssessmentsView extends StatelessWidget {
       drawer: const NavDrawer(),
       body: Container(
         color: moodleBg,
-        child: const SingleChildScrollView(
+        child: SingleChildScrollView(
           padding: EdgeInsets.all(24.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Assessments',
+                'My Assessments',
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
@@ -77,9 +77,32 @@ class AssessmentsView extends StatelessWidget {
               ),
               SizedBox(height: 24),
               Text(
-                'This is the assessments page.',
-                style: TextStyle(fontSize: 16, color: moodleTextDark),
+                'My Assessments shows a summary of your assessments across all of your modules, including both credit-bearing and non-credit bearing. You can filter to show just credit-bearing assessments or all assessments.',
+                style: TextStyle(fontSize: 16),
               ),
+              SizedBox(height: 24),
+
+              Row(
+                children: [
+                  Text('Show', style: TextStyle(fontSize: 16)),
+                  SizedBox(width: 8),
+
+                  DropdownMenu<String>(
+                    width: 150,
+                    initialSelection: 'Upcoming',
+                    dropdownMenuEntries: const [
+                      DropdownMenuEntry(value: 'Upcoming', label: 'Upcoming'),
+                      DropdownMenuEntry(value: 'Past', label: 'Past'),
+                      DropdownMenuEntry(value: 'All', label: 'All'),
+                    ],
+                    onSelected: (String? value) {},
+                  ),
+
+                  
+                ],
+              )
+
+
             ],
           ),
         ),
