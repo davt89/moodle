@@ -107,6 +107,7 @@ class AssessmentsView extends StatelessWidget {
                   SizedBox(width: 8),
 
                   DropdownMenu<String>(
+                    width: 270,
                     initialSelection: 'All modules',
                     dropdownMenuEntries: const [
                       DropdownMenuEntry(value: 'All modules', label: 'All modules'),
