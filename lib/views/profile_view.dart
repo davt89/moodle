@@ -63,7 +63,7 @@ class ProfileView extends StatelessWidget {
       
       body: Container(
         color: moodleBg,
-        child: const SingleChildScrollView(
+        child: SingleChildScrollView(
           padding: EdgeInsets.all(24.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -95,9 +95,24 @@ class ProfileView extends StatelessWidget {
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: moodleTextDark),
                   ),
                 ]
-              )
+              ),
+              SizedBox(height: 24),
 
-              
+              Text(
+                'User details',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: moodlePurple),
+              ),
+              SizedBox(height: 12),
+
+              TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: moodlePurple,
+                  foregroundColor: moodleWhite,
+                ),
+                onPressed: () {},
+                child: Text('Edit profile'),
+              ),
+
             ],
           ),
         ),
