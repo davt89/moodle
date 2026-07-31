@@ -115,7 +115,26 @@ class AssessmentsView extends StatelessWidget {
                     ],
                     onSelected: (String? value) {},
                   ),
-                ],)
+                ],
+              ),
+              SizedBox(height: 14),
+
+              Row(
+                children: [
+                  Text('Type', style: TextStyle(fontSize: 16)),
+                  SizedBox(width: 8),
+
+                  DropdownMenu<String>(
+                    initialSelection: 'All assessments',
+                    dropdownMenuEntries: const [
+                      DropdownMenuEntry(value: 'All assessments', label: 'All assessments'),
+                      DropdownMenuEntry(value: 'Credit-bearing only', label: 'Credit-bearing only'),
+                    ],
+                    onSelected: (String? value) {},
+                  ),
+                ],
+              ),
+
 
 
             ],
