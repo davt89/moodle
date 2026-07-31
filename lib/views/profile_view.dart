@@ -124,6 +124,13 @@ class ProfileView extends StatelessWidget {
               ),
               SizedBox(height: 12),
 
+              const Text(
+                'Timezone',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: moodleTextDark),
+              ),
+              const Text(
+                'Europe/London',
+              ),
 
 
             ],
